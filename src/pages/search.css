@@ -1,0 +1,67 @@
+.container_card__personaje{
+    display: grid;
+    width: 100%;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+    grid-gap: 30px;
+    align-content: center;
+}
+
+.card_personaje {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.card_personaje__img {
+    width: 200px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card_personaje__info {
+    background-color: #f0f8ff;
+    width: calc(100% - 200px);
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-inline-start: 0;
+    padding: 0px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:center;
+}
+.card_personaje__info ul{
+    width: 100%;
+    padding-inline-start: 20px;
+    list-style: none;
+    text-align: left;
+}
+.card_personaje__info h3 {
+    margin-block: 5px;
+}
+.card_personaje__info ul,.card_personaje__info ul h5{
+    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
+}
+.card_personaje__info ul h5{
+    font-size: 0.95em;
+}
+
+@media only screen and (max-width:828px ){
+    .card_personaje__info h3 {
+        margin-block: 20px;
+        font-size: 2em;
+    }
+    .card_personaje__info ul h5{
+        font-size: 1.3em;
+    }        
+}
+
+
+
+

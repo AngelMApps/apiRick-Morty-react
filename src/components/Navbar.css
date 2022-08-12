@@ -1,3 +1,21 @@
 .navbar{
-    background-color: aliceblue;
+    background-color: #2d244d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav_title{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav_routes{
+    list-style: none;
+    padding: 0;
+    width:20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
